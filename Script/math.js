@@ -70,13 +70,13 @@ if(question1.toLowerCase() === 'buhari' && question2.toLowerCase() ==='seyi maki
 
 // making computer to guess random number
 
-function getRandomNumber(num){
-    return Math.floor(Math.random() * num) + 1;
-}
-var number = 100;
-var randomNum = getRandomNumber(number);
-var computerGuess;
-var guessCounter = 0;
+// function getRandomNumber(num){
+//     return Math.floor(Math.random() * num) + 1;
+// }
+// var number = 4;
+// var randomNum = getRandomNumber(number);
+// var correctNumber = false;
+// var guessCounter = 0;
 
 // while (computerGuess !== randomNum) {
 //     computerGuess = getRandomNumber(number);
@@ -84,5 +84,22 @@ var guessCounter = 0;
 // }
 
 //alert("Computer matches at "+ guessCounter +" times and the random number is "+ randomNum);
+/*
+do {
+    var userInput = prompt("guess a number from 1 to 4");
+    guessCounter += 1;
+    if(parseInt(userInput)=== randomNum){
+        correctNumber = true
+    }
+} while (!correctNumber);
 
+alert("You got it right after "+guessCounter+ " attempt and the number is " +userInput);    */
 
+// for loop
+
+var html = '';
+
+for (var index = 1; index <= 200; index++) {
+    html += '<div>' + index + '</div>';
+}
+document.write(html);
