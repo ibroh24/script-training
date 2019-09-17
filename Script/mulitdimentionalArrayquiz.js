@@ -1,7 +1,16 @@
 var quizQuestionAndAnswers = [
-    ['How many head does hydra snake has?', 2],
-    ['How many state are there in Nigeria?', 36],
-    ['How many legs does milipede has?', 100]
+    {
+        questions: 'How many head does hydra snake has?',
+        answers: 2
+    },
+    {
+        questions: 'How many state are there in Nigeria?',
+        answers: 36
+    },
+    {
+        questions: 'How many legs does milipede has?',
+        answers: 100
+    }
 ];
 
 var correct = 0;
@@ -9,8 +18,8 @@ var questions;
 var answers;
 var userInput;
 for (var i = 0; i < quizQuestionAndAnswers.length; i++) {
-    questions = quizQuestionAndAnswers[i][0];
-    answers = quizQuestionAndAnswers[i][1];
+    questions = quizQuestionAndAnswers[i].questions;
+    answers = quizQuestionAndAnswers[i].answers;
     userInput = parseInt(prompt(questions));
     if (userInput === answers){
         correct +=1;
