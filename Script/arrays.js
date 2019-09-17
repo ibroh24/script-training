@@ -1,4 +1,11 @@
-var cartList = ['bread', 'butter', 'egg', 'cream', 'biscuit', 'gala'];
+var cartList = [
+    ['bread', 'For Toasting'], 
+    ['butter', 'For Cakes'],
+    ['egg', 'For Yam Lover'],
+    ['cream', 'And Icing Sugar'],
+    ['biscuit', 'For Little Ones'],
+    ['gala', 'To get it done in lag :)']
+];
 
 // function to populate all items in an array
 function itemList(list) {
@@ -51,7 +58,7 @@ while (true) {
         break;
     }else{
         if(userSearch.indexOf(cartList)){
-            document.write("We have "+userSearch);
+            document.write("We have "+userSearch+'<br>');
             break;
         }else{
             document.write("We dont have "+ userSearch+ " in stock");
@@ -60,3 +67,4 @@ while (true) {
     }
     
 }
+document.write(cartList[5][1]);
