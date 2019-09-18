@@ -3,6 +3,9 @@ const mytext = document.getElementById('mytext');
 const button = document.getElementById('myButton');
 const btn2 = document.getElementById('myButton2');
 const myList = document.getElementsByTagName('li');
+const checkErrors = document.getElementsByClassName('errorCheck')
+
+
 button.addEventListener('click', ()=>{
     heading.style.color = mytext.value;
     heading.style.backgroundColor = 'green';
@@ -18,6 +21,13 @@ btn2.addEventListener('click', () => {
 button.addEventListener('click', () => {
     for (let i = 0; i < myList.length; i++) {
         myList[i].style.color = mytext.value;
+        
+    }
+})
+
+button.addEventListener('click', () => {
+    for (let i = 0; i < checkErrors.length; i++) {
+        checkErrors[i].style.color = 'red';
         
     }
 })
